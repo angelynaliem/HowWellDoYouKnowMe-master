@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">How Well Do You Know Me?</string>
+    <string name="intro">Hi! I\'m Angelyn. Please tell me your name before starting the quiz below:</string>
+    <string name="q1">1. I like to eat:</string>
+    <string name="a1">Grilled fish, rice, and sambal</string>
+    <string name="a2">Hamburger, fries, and ketchup</string>
+    <string name="a3">Sushi, unadon, and green tea ice cream</string>
+    <string name="q2">2. I wash my hair...</string>
+    <string name="a21">Once a day</string>
+    <string name="a22">Once every 2-3 days</string>
+    <string name="a23">Once a week</string>
+    <string name="q3">3. Which genre of books would I read?</string>
+    <string name="a31">Novel</string>
+    <string name="a32">Biography</string>
+    <string name="a33">Self-help</string>
+    <string name="q4">4. What would you find me do at 11 pm on a Tuesday?</string>
+    <string name="a41">Sleeping</string>
+    <string name="a42">Watching netflix</string>
+    <string name="a43">Coding</string>
+    <string name="calculate">Calculate score</string>
+    <string name="score">My score is \u0020</string>
+    <string name="eight">/8!</string>
+    <string name="share">Share</string>
+    <string name="plain">text/plain</string>
+    <string name="mail_to">mailto:</string>
+
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginTop="@dimen/sixteen"
+            android:adjustViewBounds="true"
+            android:maxHeight="@dimen/one_fifty"
+            android:maxWidth="@dimen/one_fifty"
+            android:src="@drawable/my_pic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sixteen"
+            android:text="@string/intro"
+            android:textSize="@dimen/twenty_sp" />
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginRight="@dimen/sixteen"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sixteen"
+            android:text="@string/q1"
+            android:textSize="@dimen/twenty_sp" />
+
+        <CheckBox
+            android:id="@+id/indonesian_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/a1"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <CheckBox
+            android:id="@+id/junk_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/a2"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <CheckBox
+            android:id="@+id/japanese_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/a3"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sixteen"
+            android:text="@string/q2"
+            android:textSize="@dimen/twenty_sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question_three_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/a21"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <RadioButton
+                android:id="@+id/question_three_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/a22"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <RadioButton
+                android:id="@+id/question_three_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/a23"
+                android:textSize="@dimen/sixteen_sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sixteen"
+            android:text="@string/q3"
+            android:textSize="@dimen/twenty_sp" />
+
+        <CheckBox
+            android:id="@+id/novel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/a31"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <CheckBox
+            android:id="@+id/biography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/a32"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <CheckBox
+            android:id="@+id/self_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/a33"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/sixteen"
+            android:text="@string/q4"
+            android:textSize="@dimen/twenty_sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/a41"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <RadioButton
+                android:id="@+id/netflix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/a42"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <RadioButton
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/a43"
+                android:textSize="@dimen/sixteen_sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sixteen"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginTop="@dimen/sixteen"
+            android:onClick="calculateScore"
+            android:text="@string/calculate"
+            android:textSize="@dimen/twenty_sp" />
+
+    </LinearLayout>
+
+</ScrollView>
