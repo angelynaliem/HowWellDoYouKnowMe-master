@@ -7,8 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     RadioButton sleep;
     RadioButton netflix;
     RadioButton code;
+
+    protected int numberOfCheckboxesCheckedOne = 0;
+    protected int numberOfCheckboxesCheckedTwo = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +49,99 @@ public class MainActivity extends AppCompatActivity {
         sleep = findViewById(R.id.sleep);
         netflix = findViewById(R.id.netflix);
         code = findViewById(R.id.code);
+
+        indonesian_food.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton cb, boolean b) {
+                if (numberOfCheckboxesCheckedOne == 2 && b) {
+                    cb.setChecked(false);
+                    Toast.makeText(getApplicationContext(),
+                            "Limit reached!!!", Toast.LENGTH_SHORT).show();
+                } else if (b) {
+                    numberOfCheckboxesCheckedOne++;
+                } else if (!b) {
+                    numberOfCheckboxesCheckedOne--;
+                }
+            }
+        });
+
+        junk_food.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton cb, boolean b) {
+                if (numberOfCheckboxesCheckedOne == 2 && b) {
+                    cb.setChecked(false);
+                    Toast.makeText(getApplicationContext(),
+                            "Limit reached!!!", Toast.LENGTH_SHORT).show();
+                } else if (b) {
+                    numberOfCheckboxesCheckedOne++;
+                } else if (!b) {
+                    numberOfCheckboxesCheckedOne--;
+                }
+            }
+        });
+
+        japanese_food.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton cb, boolean b) {
+                if (numberOfCheckboxesCheckedOne == 2 && b) {
+                    cb.setChecked(false);
+                    Toast.makeText(getApplicationContext(),
+                            "Limit reached!!!", Toast.LENGTH_SHORT).show();
+                } else if (b) {
+                    numberOfCheckboxesCheckedOne++;
+                } else if (!b) {
+                    numberOfCheckboxesCheckedOne--;
+                }
+            }
+        });
+
+        novel.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton cb, boolean b) {
+                if (numberOfCheckboxesCheckedTwo == 2 && b) {
+                    cb.setChecked(false);
+                    Toast.makeText(getApplicationContext(),
+                            "Limit reached!!!", Toast.LENGTH_SHORT).show();
+                } else if (b) {
+                    numberOfCheckboxesCheckedTwo++;
+                } else if (!b) {
+                    numberOfCheckboxesCheckedTwo--;
+                }
+            }
+        });
+
+        biography.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton cb, boolean b) {
+                if (numberOfCheckboxesCheckedTwo == 2 && b) {
+                    cb.setChecked(false);
+                    Toast.makeText(getApplicationContext(),
+                            "Limit reached!!!", Toast.LENGTH_SHORT).show();
+                } else if (b) {
+                    numberOfCheckboxesCheckedTwo++;
+                } else if (!b) {
+                    numberOfCheckboxesCheckedTwo--;
+                }
+            }
+        });
+
+        self_help.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton cb, boolean b) {
+                if (numberOfCheckboxesCheckedTwo == 2 && b) {
+                    cb.setChecked(false);
+                    Toast.makeText(getApplicationContext(),
+                            "Limit reached!!!", Toast.LENGTH_SHORT).show();
+                } else if (b) {
+                    numberOfCheckboxesCheckedTwo++;
+                } else if (!b) {
+                    numberOfCheckboxesCheckedTwo--;
+                }
+            }
+        });
+
     }
+
 
     public void calculateScore(View view) {
 
